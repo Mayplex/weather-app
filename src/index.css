@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:regular,italic,500,500italic,700,700italic);
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +7,9 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Ubuntu", sans-serif;
+  background: url(https://getwallpapers.com/wallpaper/full/1/f/3/1522776-download-hd-sky-wallpaper-1920x1080-for-xiaomi.jpg)
+    center no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
