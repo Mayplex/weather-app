@@ -31,7 +31,7 @@ const Infoblock = () => {
     <div className={s.infoblock}>
       <Temperature weather={weather} />
       <Search />
-      <Details />
+      <Details weather={weather} />
     </div>
   );
 };

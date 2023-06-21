@@ -1,7 +1,19 @@
-.block {
-  font-family: inherit;
+.container {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
+  font-family: inherit;
+
+  .details_block {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }

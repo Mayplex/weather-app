@@ -1,4 +1,3 @@
-import search from "../assets/images/search.png";
 import s from "../modules/Search.module.scss";
 import { BsSearch } from "react-icons/bs";
 import { useState } from "react";

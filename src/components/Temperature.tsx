@@ -16,12 +16,17 @@ const Temperature = ({ weather }: any) => {
         />
         {weather?.location?.name},{weather?.location?.country}
       </span>
+
+      <span className={s.time}>{weather?.location?.localtime}</span>
+
       <img
         style={{ width: "100px", height: "100px" }}
         src={weather?.current?.condition.icon}
         alt="Weather Icon"
       />
+
       <span className={s.temp}>{weather?.current?.temp_c}°C</span>
+
       <span className={s.subtitle}>{weather?.current?.condition.text}</span>
     </div>
   );
