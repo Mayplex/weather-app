@@ -1,12 +1,19 @@
 import s from "../modules/Search.module.scss";
 import { BsSearch } from "react-icons/bs";
-import { useState } from "react";
+import { useContext } from "react";
+import { Context } from "../context/Context";
 
 const Search = () => {
-  const [value, setValue] = useState("");
+  const contextData = useContext(Context);
+
+  if (!contextData) {
+    return null;
+  }
+
+  const { value, setValue, getData } = contextData;
 
   const handleSearch = () => {
-    console.log("Search value:", value);
+    getData();
   };
 
   return (
@@ -15,6 +22,7 @@ const Search = () => {
         className={s.input}
         type="text"
         value={value}
+        onClick={() => setValue("")}
         onChange={(e) => setValue(e.target.value)}
         placeholder="Enter the location name"
       />
